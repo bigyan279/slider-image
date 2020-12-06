@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image slider</title>
+<link rel ="stylesheet"type="text/css" href="style.css">
+<link rel="icon" href="icon.png" type="image/png"sizes="16x16">
+<link rel ="stylesheet"type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section>
+	<img src="images/img1_large.jpg" alt="" id="slider">
+	
+    <ul class="navigation">
+<li onclick="imgSlider('images/img1_large.jpg')"><img src="images/img1_thumb.jpg"></li>
+
+<li onclick="imgSlider('images/img2_large.jpg')"><img src="images/img2_thumb.jpg" alt=""></li>
+		
+<li onclick="imgSlider('images/img3_large.jpg')"><img src="images/img3_thumb.jpg" alt=""></li>
+	
+<li onclick="imgSlider('images/img4_large.jpg')"><img src="images/img4_thumb.jpg" alt=""></li>
+	
+    </ul>
+	
+    <h2>Simple Image Sliders</h2>
+	
+</section>
+
+	
+
+
+
+
+
+<script type="text/javascript">
+
+	function imgSlider(anything){
+		document.getElementById("slider").src = anything;
+	}
+
+	
+</script>
+
+</body>
+</html>
